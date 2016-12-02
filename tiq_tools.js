@@ -1,0 +1,4 @@
+// Tealium: Version pop-up
+javascript: if (typeof utag == 'undefined') { alert('TEALIUM NOT PRESENT') } else { alert("Profile: " + utag.data["ut.profile"] + "\nEnvironment: " + utag.data["ut.env"] + "\nVersion: " + utag.data["ut.version"].substr(2, 4) + "\nRelease date: " + utag.data["ut.version"].substr(13, 2) + "/" + utag.data["ut.version"].substr(11, 2) + "/" + utag.data["ut.version"].substr(7, 4) + "\nRelease time: " + utag.data["ut.version"].substr(15, 2) + "." + utag.data["ut.version"].substr(17, 2)) }
+// Tealium: Set debug mode
+javascript: document.cookie="utagdb=true"; alert('Tealium Debug mode activated!');
